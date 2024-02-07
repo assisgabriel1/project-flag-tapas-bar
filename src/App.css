@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos padrão */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Primeira seccao */
+.nav {
+	background-image: url(Images/IMG_8109\ 2.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#logo {
+	background-image: url(Images/república-3.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	padding: 0 20px; /* espaçamento horizontal para evitar invasão */
+}
+.navbar {
+	height: 50px;
+	background-color: transparent;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+li {
+	flex: 1;
+}
+
+a {
+	display: block;
+	color: #fafafa;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: rgba(106, 71, 0, 0.223);
+}
+/* final da primeira seccao */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(181, 126, 15);
+	background-size: 100%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+	body {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#hero {
+		margin-top: 0; /* Remova a margem superior do #hero */
+	}
+
+	#hero h1 {
+		font-size: 30px;
+		margin-top: 20px; /* Adicione uma margem superior para o #hero h1 */
+	}
+	#container5 {
+		flex-direction: column;
+	}
+	#cocktail {
+		order: -1;
+	}
+
+	#container5 h1 {
+		order: 1;
+	}
+	#container {
+		flex-direction: column;
+		height: auto;
+		padding: 20px; /* Reduz a quantidade de padding para acomodar o espaço disponível */
+	}
+
+	#container h1 {
+		font-size: 30px;
+		margin-bottom: 20px; /* add margem inferior para separar o h1 das outras divs */
+	}
+	#container3 {
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items:auto;
+		background-position: left;
+		line-break: auto;
+	}
+
+	#container3 h1 {
+		align-self: flex-start;
+		margin-top: 0;
+		padding-left: 0;
+	}
+}
+
+/*linha que divide o logo da section about*/
+.divider {
+	border: none;
+	border-top: 2px solid rgb(181, 126, 15); /* Ajustar a espessura para 2px */
+	margin: 0;
+}
+
+/* Sec. About */
+#about {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	padding: 40px;
+	text-align: center;
+	background-image: url('Images/bksection.png');
+}
+
+#about h1 {
+	color: rgb(181, 126, 15);
+
+	font-weight: 24px;
+	margin-left: 30px;
+	margin-right: 30px;
+  margin-bottom: 30px;
+	font-size: 30px;
+}
+#about h1 .destaque {
+	color: rgb(80, 55, 8);
+}
+
+#gif img {
+	display: flex;
+	width: 400px;
+	border-radius: 20px;
+}
+
+/* primeiro H1 destaque */
+#containertxt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	padding: 20px;
+	background-image: url('Images/bksection.png');
+	position: relative;
+}
+#containertxt h1 {
+	font-size: 70px;
+	color: rgb(106, 71, 0);
+	/*inclui o containertxt que vem a seguir a imagem*/
+}
+
+/*imagem de destaque Tapas*/
+
+#container2 {
+	display: flex;
+	justify-content: center;
+	height: 400px;
+	padding: 20px;
+	background-image: url('Images/bksection.png');
+	position: relative;
+	transform: 0.9s ease-in-out;
+}
+
+#container2 h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-size: 100px;
+	font-weight: bold;
+}
+#container2 img {
+	border-radius: 5%;
+	max-width: 100%;
+	height: auto;
+	transform: 0.9s ease-in-out;
+}
+
+/*imagem e h1 de destaque cockatil*/
+#container3 {
+	display: flex;
+	position: relative;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 500px;
+	padding: 20px;
+	background-image: url('Images/bksection.png');
+}
+
+#container3 h1 {
+	color: rgb(181, 126, 15);
+	padding-left: 50px;
+	word-wrap: break-word;
+	align-self: center;
+	font-size: 30px;
+}
+#container3 h1 .destaque {
+	color: rgb(80, 55, 8);
+}
+
+#container3 img {
+	width: 400px;
+	border-radius: 20px;
+}
+
+/* H1 em destaque */
+
+#h1destaque {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	padding: 20px;
+	background-image: url('Images/bksection.png');
+	position: relative;
+}
+#h1destaque h1 {
+	color: rgb(106, 71, 0);
+	padding-left: 50px;
+	font-weight: bold;
+	word-wrap: break-word; /* Quebra as palavra */
+	align-items: center;
+	font-size: 50px;
+}
+
+/*imagem de destaque cockatil*/
+
+.destaque2 {
+	color: rgb(181, 126, 15);
+	height: 100px;
+	font-weight: 800;
+	font-size: 100px;
+	margin: 0%;
+}
+
+#imagens {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('Images/bksection.png');
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	height: 250px;
+}
+
+#imagens img {
+	max-width: 30%;
+	height: 200px;
+	margin: 10px;
+	border-radius: 200px;
+	transition: transform 1s ease-in-out;
+	border: 1px solid rgb(181, 126, 15);
+}
+
+/*Por fazer*/
+.reservation-button {
+	margin-top: 20px;
+	background-color: #ffa600c7;
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 50px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+.reservation-button:hover {
+	background-color: #945b00;
+	border-radius: 50px;
+}
+
+.contactos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+#contactos p {
+	display: flex;
+
+	color: #ffffff;
+}
+
+/*Footer*/
+.footer {
+	background-color: rgb(181, 126, 15);
+	color: #ffffff;
+	padding: 5px;
+	margin: 10px;
+	text-align: center;
+}
+
+/*API*/
+#map {
+	width: 100%;
+	height: 400px;
+	background-color: #de8d00;
+	border-radius: 50px;
+}
+.footer img {
+	width: 400px;
+}
